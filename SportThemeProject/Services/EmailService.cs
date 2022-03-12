@@ -21,7 +21,7 @@ namespace SportThemeproject.Services
             using (var client = new SmtpClient())
             {
                 await client.ConnectAsync("smtp.mail.ru", 25, false);
-                await client.AuthenticateAsync("randevu1007@mail.ru", "samigulov720%");
+                await client.AuthenticateAsync("", "");
                 await client.SendAsync(emailMessage);
 
                 await client.DisconnectAsync(true);
